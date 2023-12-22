@@ -5,9 +5,48 @@
 <html>
 <head>
     <title>Text To Image</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .container {
+            margin-top: 4rem;
+        }
+
+        h1 {
+            color: #ff6f61;
+            font-size: 2.5rem;
+        }
+
+        label {
+            color: #ffcc00;
+        }
+
+        input {
+            background-color: #333;
+            color: #fff;
+            border: 2px solid #ffcc00;
+        }
+
+        button {
+            background-color: #ff6f61;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff402c;
+        }
+    </style>
 </head>
 <body>
-    <div class="container mt-4">
+    <div class="container">
         <h1>Pass a Text to get the closest Image..</h1>
         <form method="post">
             {% csrf_token %}
